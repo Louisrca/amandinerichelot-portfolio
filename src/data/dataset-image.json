@@ -3,17 +3,28 @@
     {
       "id": "section-1",
       "title": "Section 1",
-      "imageIds": ["image1", "image2"]
+      "imageIds": [
+        "b5bc4ac8-de3f-4481-ac05-53f8a24cf344",
+        "a3ac6873-9eac-4d9f-8e31-626f03906375"
+      ]
     },
     {
       "id": "section-2",
       "title": "Section 2",
-      "imageIds": ["image3"]
+      "imageIds": ["027a5ce8-0bed-49d0-a415-9fe30233949c"]
     }
   ],
   "images": [
     {
-      "id": "image1",
+      "id": "b5bc4ac8-de3f-4481-ac05-53f8a24cf344",
+      "src": "/images/leo_visions-K2HIvGR9CPQ-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
+    },
+    {
+      "id": "a3ac6873-9eac-4d9f-8e31-626f03906375",
       "src": "/images/miguel-angel-hernandez-cObuSxlcUac-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
@@ -21,64 +32,88 @@
       "order": 1
     },
     {
-      "id": "image2",
+      "id": "027a5ce8-0bed-49d0-a415-9fe30233949c",
       "src": "/images/averie-woodard-5d20kdvFCfA-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
-      "order": 2
+      "order": 1
     },
     {
-      "id": "image3",
+      "id": "3b8d5ac4-c5a7-4f89-8dfd-f6975e3b61b8",
       "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
-      "order": 1
+      "order": 3
     },
     {
-      "id": "image4",
+      "id": "aaf443ed-5920-4fa9-9130-3f0336276c87",
+      "src": "/images/leo_visions-K2HIvGR9CPQ-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 5
+    },
+    {
+      "id": "f1a79c5e-c8b2-41bb-8a51-f7755ad8f587",
       "src": "/images/tabitha-turner-Lc9czM0IGfU-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
-      "order": 2
+      "order": 4
     },
     {
-      "id": "image3",
+      "id": "a946dd3a-27ed-40a0-a314-fecb82db0548",
       "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 3
+    },
+    {
+      "id": "22adad93-1d4a-44b3-bbe0-dc30b33a4a5d",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 3
+    },
+    {
+      "id": "cfdedb3a-5fa1-4f89-8127-4d512b45d6b0",
+      "src": "/images/leo_visions-K2HIvGR9CPQ-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 5
+    },
+    {
+      "id": "7201b218-872a-4f0d-a7eb-4f5e7f05382e",
+      "src": "/images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
       "order": 1
     },
     {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "id": "7201b218-872a-4f0d-a7eb-4f5e7f05382e",
+      "src": "/images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
       "order": 1
     },
     {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "id": "7201b218-872a-4f0d-a7eb-4f5e7f05382e",
+      "src": "/images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
       "order": 1
     },
     {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
-      "alt": "Placeholder image",
-      "title": "Placeholder image",
-      "description": "This is a placeholder image",
-      "order": 1
-    },
-    {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "id": "7201b218-872a-4f0d-a7eb-4f5e7f05382e",
+      "src": "/images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
