@@ -1,17 +1,16 @@
 import React from "react";
-import styles from "./ImageGrid.module.css";
 import * as imagesData from "@/data/dataset-image.json";
 
 export default function ImageGrid() {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 border-2 border-gray-200 rounded-md">
         {imagesData?.images?.map((image) => (
           <img
             key={image.id}
             src={image.src}
             alt={image.alt}
-            className={`${styles.image} object-cover w-full h-full`}
+            className="w-full block mb-2"
           />
         ))}
       </div>

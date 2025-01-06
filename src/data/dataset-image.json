@@ -37,37 +37,52 @@
       "order": 1
     },
     {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
-      "alt": "Placeholder image",
-      "title": "Placeholder image",
-      "description": "This is a placeholder image",
-      "order": 1
-    },
-    {
-      "id": "image3",
-      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
-      "alt": "Placeholder image",
-      "title": "Placeholder image",
-      "description": "This is a placeholder image",
-      "order": 1
-    },
-
-    {
-      "id": "image2",
-      "src": "/images/averie-woodard-5d20kdvFCfA-unsplash.jpg",
-      "alt": "Placeholder image",
-      "title": "Placeholder image",
-      "description": "This is a placeholder image",
-      "order": 2
-    },
-    {
       "id": "image4",
       "src": "/images/tabitha-turner-Lc9czM0IGfU-unsplash.jpg",
       "alt": "Placeholder image",
       "title": "Placeholder image",
       "description": "This is a placeholder image",
       "order": 2
+    },
+    {
+      "id": "image3",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
+    },
+    {
+      "id": "image3",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
+    },
+    {
+      "id": "image3",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
+    },
+    {
+      "id": "image3",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
+    },
+    {
+      "id": "image3",
+      "src": "/images/william-white-cF6fz9QwfrY-unsplash.jpg",
+      "alt": "Placeholder image",
+      "title": "Placeholder image",
+      "description": "This is a placeholder image",
+      "order": 1
     }
   ]
 }
