@@ -14,7 +14,6 @@ export default function Cursor() {
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      // Utilisation de `elementFromPoint` pour détecter l'élément sous le curseur
       const element = document.elementFromPoint(e.clientX, e.clientY);
 
       if (element) {
@@ -22,7 +21,6 @@ export default function Cursor() {
         const bgColor = computedStyle.backgroundColor || "rgb(255, 255, 255)";
         const invertedColor = invertColor(bgColor);
 
-        // Mettre à jour la couleur du curseur
         setCursorColor(invertedColor);
       }
     };
@@ -42,10 +40,6 @@ export default function Cursor() {
     };
   }, []);
 
-  console.log("🚀 ~ Cursor ~ screenWidth:", screenWidth);
-  console.log("🚀 ~ Cursor ~ screenHeight:", screenHeight);
-
-  // Fonction pour inverser une couleur RGB
   const invertColor = (rgb: string) => {
     const rgbValues = rgb.match(/\d+/g);
     if (!rgbValues) return "black";
@@ -57,7 +51,10 @@ export default function Cursor() {
 
     return `rgb(${invertedR}, ${invertedG}, ${invertedB})`;
   };
-  if (screenWidth < 1024) return null;
+  console.log("🚀 ~ Cursor ~ mousePosition:", mousePosition);
+
+  console.log("🚀 ~ Cursor ~ screenWidth:", screenWidth);
+  console.log("🚀 ~ Cursor ~ screenHeight:", screenHeight);
 
   return (
     <div
