@@ -4,8 +4,13 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const [screenHeight, setScreenHeight] = useState(window.screen.height);
+
   const [cursorColor, setCursorColor] = useState("black");
   const cursorRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -22,12 +27,23 @@ export default function Cursor() {
       }
     };
 
+    const onResize = () => {
+      setScreenWidth(window.screen.width);
+      setScreenHeight(window.screen.height);
+    };
+
+    window.addEventListener("resize", onResize);
+
     window.addEventListener("mousemove", onMouseMove);
 
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("resize", onResize);
     };
   }, []);
+
+  console.log("🚀 ~ Cursor ~ screenWidth:", screenWidth);
+  console.log("🚀 ~ Cursor ~ screenHeight:", screenHeight);
 
   // Fonction pour inverser une couleur RGB
   const invertColor = (rgb: string) => {
@@ -41,7 +57,7 @@ export default function Cursor() {
 
     return `rgb(${invertedR}, ${invertedG}, ${invertedB})`;
   };
-  console.log("🚀 ~ Cursor ~ mousePosition:", mousePosition);
+  if (screenWidth < 1024) return null;
 
   return (
     <div
@@ -57,7 +73,7 @@ export default function Cursor() {
         position: "fixed",
         pointerEvents: "none",
         transform: "translate(-50%, -50%)",
-        mixBlendMode: "difference", //
+        mixBlendMode: "difference",
       }}
     ></div>
   );
