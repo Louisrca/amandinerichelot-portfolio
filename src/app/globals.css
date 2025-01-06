@@ -14,5 +14,11 @@
   }
 }
 
+body,
+button,
+a {
+  cursor: none;
+}
 body {
+  background-color: white;
 }

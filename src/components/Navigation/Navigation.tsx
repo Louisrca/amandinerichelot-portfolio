@@ -5,10 +5,10 @@ export default function Navigation() {
   return (
     <>
       <ul className="flex justify-center space-x-32">
-        <li className="font-thin text-gray-500 uppercase transition-all duration-150  hover:text-black hover:font-light">
+        <li className="font-thin text-gray-500 uppercase transition-all duration-100 hover:text-black hover:font-light">
           <Link href={"/"}>Works</Link>
         </li>
-        <li className="font-thin text-gray-500 uppercase transition duration-150  hover:text-black hover:font-light">
+        <li className="font-thin text-gray-500 uppercase transition-all duration-100  hover:text-black hover:font-light">
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
