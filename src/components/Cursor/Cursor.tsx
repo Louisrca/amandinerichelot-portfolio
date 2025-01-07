@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from "react";
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const [screenWidth, setScreenWidth] = useState(window.screen.width);
-  const [screenHeight, setScreenHeight] = useState(window.screen.height);
+  // const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  // const [screenHeight, setScreenHeight] = useState(window.screen.height);
 
   const [cursorColor, setCursorColor] = useState("black");
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -25,18 +25,18 @@ export default function Cursor() {
       }
     };
 
-    const onResize = () => {
-      setScreenWidth(window.screen.width);
-      setScreenHeight(window.screen.height);
-    };
+    // const onResize = () => {
+    //   setScreenWidth(window.screen.width);
+    //   setScreenHeight(window.screen.height);
+    // };
 
-    window.addEventListener("resize", onResize);
+    // window.addEventListener("resize", onResize);
 
     window.addEventListener("mousemove", onMouseMove);
 
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("resize", onResize);
+      // window.removeEventListener("resize", onResize);
     };
   }, []);
 
@@ -53,8 +53,8 @@ export default function Cursor() {
   };
   console.log("🚀 ~ Cursor ~ mousePosition:", mousePosition);
 
-  console.log("🚀 ~ Cursor ~ screenWidth:", screenWidth);
-  console.log("🚀 ~ Cursor ~ screenHeight:", screenHeight);
+  // console.log("🚀 ~ Cursor ~ screenWidth:", screenWidth);
+  // console.log("🚀 ~ Cursor ~ screenHeight:", screenHeight);
 
   return (
     <div
