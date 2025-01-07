@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import * as imagesData from "@/data/dataset-image.json";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./ImageGrid.module.css";
@@ -13,14 +14,25 @@ export default function ImageGrid() {
   return (
     <>
       <div className="columns-2 sm:columns-2 lg:columns-3 gap-2 rtl ">
+
+       
         {imagesData?.images?.map((image) => (
-          <img
+          <div  key={image.id + "---" + uuidv4()} className={styles.imagesContainer}>
+
+
+     
+          <Image
             key={image.id + "---" + uuidv4()}
             onContextMenu={handleRightClick}
             src={image.src}
             alt={image.alt + "---" + image.order}
             className={`${styles.images} w-full block  mb-2 `}
-          />
+            priority
+            width={200} // facultatif
+            height={500}// facultatif
+            layout="responsive"
+            />
+            </div>
         ))}
       </div>
     </>

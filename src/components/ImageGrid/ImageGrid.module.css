@@ -1,4 +1,14 @@
+.imagesContainer{
+  width: 100%;
+  height: auto;
+}
+.images{
+  transition: opacity 0.5s ease-in-out;
+}
+
 .images:hover {
   opacity: 0.5;
-  transition: opacity 0.8s ease-out;
+ 
 }
+
+
