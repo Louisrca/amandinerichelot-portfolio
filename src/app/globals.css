@@ -13,11 +13,11 @@
     --foreground: #ededed;
   }
 }
-
 body {
   background-color: white;
 }
-@media (min-width: 1024px) {
+
+@media ((min-width: 1024px) and (min-height: 758px)) {
   body,
   button,
   a {
