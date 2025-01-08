@@ -5,9 +5,13 @@ import { useState, useEffect, useRef } from "react";
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+  const [screenHeight, setScreenHeight] = useState(
+    typeof window !== "undefined" ? window.innerHeight : 0
+  );
 
   const [cursorColor, setCursorColor] = useState("black");
   const cursorRef = useRef<HTMLDivElement>(null);
