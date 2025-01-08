@@ -56,7 +56,7 @@ export default function Cursor() {
     return `rgb(${invertedR}, ${invertedG}, ${invertedB})`;
   };
 
-  if (screenSize.width < 1024 || screenSize.height < 758) return null;
+  if (screenSize.width < 1024 || screenSize.height < 656) return null;
 
   return (
     <div
