@@ -20,7 +20,12 @@ body {
 @media ((min-width: 1024px) and (min-height: 758px)) {
   body,
   button,
-  a {
-    cursor: none;
+  a,
+  input,
+  textarea,
+  select,
+  option,
+  label {
+    cursor: none !important;
   }
 }

@@ -16,20 +16,28 @@ export default function ImageGrid() {
     e.preventDefault();
   };
 
+  const onOpen = () => {
+    console.log("Image clicked");
+  };
+
   return (
-    <div className="columns-3 sm:columns-3 lg:columns-3 gap-2 rtl">
+    <div className="columns-2 sm:columns-2 lg:columns-3 gap-2 rtl">
       {imagesData.images?.map((image: ImageData) => (
-        <div key={uuidv4()} className={styles.imagesContainer}>
-          <Image
-            onContextMenu={handleRightClick}
-            src={image.src}
-            alt={`${image.alt} - ${image.order}`}
-            className={`${styles.images} w-full block mb-2 `}
-            priority
-            width={200}
-            height={500}
-          />
-        </div>
+        <>
+          <div key={uuidv4()} className={styles.imagesContainer}>
+            <button onClick={onOpen} className="mb-2">
+              <Image
+                onContextMenu={handleRightClick}
+                src={image.src}
+                alt={`${image.alt} - ${image.order}`}
+                className={`${styles.images} w-full block `}
+                priority
+                width={200}
+                height={500}
+              />
+            </button>
+          </div>
+        </>
       ))}
     </div>
   );
