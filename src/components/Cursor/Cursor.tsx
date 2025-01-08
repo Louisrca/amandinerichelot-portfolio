@@ -5,13 +5,10 @@ import { useState, useEffect, useRef } from "react";
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const [screenWidth, setScreenWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  const [screenHeight, setScreenHeight] = useState(
-    typeof window !== "undefined" ? window.innerHeight : 0
-  );
+  const [screenSize, setScreenSize] = useState({
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
+  });
 
   const [cursorColor, setCursorColor] = useState("black");
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -31,8 +28,10 @@ export default function Cursor() {
     };
 
     const onResize = () => {
-      setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     };
 
     window.addEventListener("resize", onResize);
@@ -57,7 +56,7 @@ export default function Cursor() {
     return `rgb(${invertedR}, ${invertedG}, ${invertedB})`;
   };
 
-  if (screenWidth < 1024 || screenHeight < 758) return null;
+  if (screenSize.width < 1024 || screenSize.height < 758) return null;
 
   return (
     <div
