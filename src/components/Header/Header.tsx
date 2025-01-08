@@ -2,10 +2,10 @@ import React from "react";
 import Title from "../Title/Title";
 import Navigation from "../Navigation/Navigation";
 
-export default function Header({ title }: { title: string }) {
+export default function Header() {
   return (
-    <header>
-      <Title title={title} />
+    <header className="mb-12">
+      <Title />
       <Navigation />
     </header>
   );

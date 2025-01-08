@@ -1,14 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
-interface TitleProps {
-  title: string;
-}
-
-export default function Title({ title }: TitleProps) {
+export default function Title() {
   return (
     <>
       <h1 className="text-5xl font-black tracking-tight text-center uppercase">
-        {title}
+        <Link href="/"> Amandine Richelot </Link>
       </h1>
     </>
   );
